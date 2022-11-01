@@ -1,0 +1,1 @@
+import './dist/jb-mobile-input.js';
