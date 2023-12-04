@@ -2,7 +2,7 @@
     outline: none;
 }
 .jb-mobile-input-web-component{
-    --jb-input-input-direction: ltr;
+    --jb-input-input-direction: var(--jb-mobile-input-input-direction, ltr);
     &:focus-visible{
         outline: none;
     }
