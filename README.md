@@ -18,3 +18,5 @@ import 'jb-mobile-input';
 ```
 to learn more information about this component and how to customize it like events, styling,... just read [jb-input](https://github.com/javadbat/jb-input)
 
+## styling
+all styles come from jb-input except `--jb-mobile-input-input-direction` this may be set if you want your input to be rtl (not recommended).

@@ -1,9 +1,3 @@
-:host(:focus), :host(:focus-visible){
-    outline: none;
-}
-.jb-mobile-input-web-component{
+.jb-input-web-component{
     --jb-input-input-direction: var(--jb-mobile-input-input-direction, ltr);
-    &:focus-visible{
-        outline: none;
-    }
 }
