@@ -3,9 +3,10 @@ import "jb-input";
 // eslint-disable-next-line no-duplicate-imports
 import { JBInputWebComponent} from "jb-input";
 import { JBInputValue, ValidationValue} from "jb-input/lib/types";
+//TODO: update it when you move validation to core package
 import { WithValidation, ValidationItem } from "jb-input/dist/common/scripts/validation/validation-helper-types";
 
-export class JBMobileInputWebComponent extends JBInputWebComponent implements WithValidation {
+export class JBMobileInputWebComponent extends JBInputWebComponent implements WithValidation<ValidationValue> {
   constructor() {
     super();
     //to prevent initWebComponent  method override
