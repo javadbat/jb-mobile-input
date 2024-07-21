@@ -14,7 +14,7 @@ import 'jb-mobile-input';
 
 ```
 ```html
-<jb-mobile-input></jb-mobile-nput>
+<jb-mobile-input></jb-mobile-input>
 ```
 to learn more information about this component and how to customize it like events, styling,... just read [jb-input](https://github.com/javadbat/jb-input)
 

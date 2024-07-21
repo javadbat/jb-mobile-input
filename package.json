@@ -18,7 +18,7 @@
     "phone web-component",
     "cellphone web component"
   ],
-  "version": "1.0.4",
+  "version": "2.0.0",
   "bugs": "https://github.com/javadbat/jb-date-input/issues",
   "license": "MIT",
   "files": [
@@ -47,6 +47,6 @@
     }
   },
   "dependencies": {
-    "jb-input": ">=2.8.3"
+    "jb-input": ">=3.0.0"
   }
 }
