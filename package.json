@@ -18,8 +18,8 @@
     "phone web-component",
     "cellphone web component"
   ],
-  "version": "2.0.0",
-  "bugs": "https://github.com/javadbat/jb-date-input/issues",
+  "version": "2.0.1",
+  "bugs": "https://github.com/javadbat/jb-mobile-input/issues",
   "license": "MIT",
   "files": [
     "LICENSE",
