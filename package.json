@@ -39,7 +39,13 @@
     "type": "git",
     "url": "https://github.com/javadbat/jb-mobile-input"
   },
-  "types": "./dist/jb-mobile-input.d.ts",
+  "types": "./dist/web-component/jb-mobile-input/lib/jb-mobile-input.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": ["./dist/web-component/jb-mobile-input/lib/jb-mobile-input.d.ts"],
+      "types":["./dist/web-component/jb-mobile-input/lib/types.d.ts"]
+    }
+  },
   "dependencies": {
     "jb-input": ">=2.8.3"
   }
