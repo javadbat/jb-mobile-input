@@ -29,7 +29,12 @@
   ],
   "exports": {
     ".": {
-      "import": "./index.js"
+      "import": "./index.js",
+      "types":"./dist/web-component/jb-mobile-input/lib/jb-mobile-input.d.ts"
+    },
+    "./types":{
+      "default":"./lib/types.ts",
+      "types":"./dist/web-component/jb-mobile-input/lib/types.d.ts"
     }
   },
   "main": "index.js",
