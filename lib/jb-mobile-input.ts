@@ -1,9 +1,8 @@
 import CSS from "./jb-mobile-input.scss";
 import "jb-input";
 // eslint-disable-next-line no-duplicate-imports
-import { JBInputWebComponent} from "jb-input";
-import { JBInputValue, ValidationValue} from "jb-input/types.js";
-import { WithValidation, ValidationItem } from "jb-validation/types.js";
+import { JBInputWebComponent, JBInputValue, ValidationValue} from "jb-input";
+import { type WithValidation, type ValidationItem } from "jb-validation";
 
 export class JBMobileInputWebComponent extends JBInputWebComponent implements WithValidation<ValidationValue> {
   constructor() {
