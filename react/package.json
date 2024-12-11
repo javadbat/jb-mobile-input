@@ -1,0 +1,39 @@
+{
+  "name": "jb-mobile-input-react",
+  "description": "mobile input react component",
+  "type": "module",
+  "author": {
+		"name": "mohammad javad bathaei",
+		"email": "javadbat@gmail.com"
+	},
+  "keywords": [
+    "jb",
+    "jb-mobile-input",
+    "mobile input",
+    "JBMobileInput",
+    "mobile input component",
+    "mobile",
+    "موبایل",
+    "react",
+    "react component"
+  ],
+  "version": "2.0.8",
+  "bugs": "https://github.com/javadbat/jb-mobile-input-react/issues",
+  "license": "MIT",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "lib/",
+    "dist/"
+  ],
+  "main": "index.js",
+  "types": "./dist/web-component/jb-mobile-input/react/lib/JBMobileInput.d.ts",
+  "repository": {
+		"type": "git",
+		"url": "git@github.com:javadbat/jb-mobile-input-react.git"
+  },
+  "dependencies": {
+    "jb-mobile-input": "file:../index.js",
+    "jb-input": ">=3.2.0"
+  }
+}

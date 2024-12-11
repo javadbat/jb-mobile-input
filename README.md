@@ -3,6 +3,10 @@ superset component on [jb-input](https://github.com/javadbat/jb-input) , just fo
 
 Demo in codepen: [jb-mobile-input](https://codepen.io/javadbat/pen/eYwZQjV)
 
+## using with JS frameworks
+
+to use this component in **react** see [`jb-mobile-input/react`](https://github.com/javadbat/jb-mobile-input/tree/main/react);
+
 ## Installation
 ```bash
 npm install --save jb-mobile-input
@@ -27,7 +31,7 @@ all styles come from [jb-input](https://github.com/javadbat/jb-input) except `--
 
 ## Other Related Docs:
 
-- see [jb-mobile-input-react](https://github.com/javadbat/jb-mobile-input-react) if you want to use this component as a ReactJS component.
+- see [`jb-mobile-input/react`](https://github.com/javadbat/jb-mobile-input/tree/main/react) if you want to use this component as a ReactJS component.
 
 - see [All JB Design system Component List](https://github.com/javadbat/design-system/blob/master/docs/component-list.md) for more components
 
