@@ -1,5 +1,10 @@
 # jb-mobile-input web component
-superset component on [jb-input](https://github.com/javadbat/jb-input) , just for mobile number input with extra filter and ready to use validator.    
+
+superset component on [jb-input](https://github.com/javadbat/jb-input) , just for mobile number input with extra filter and ready to use validator.
+- dont accept non-number char
+- accept persian number char
+- type heading `09` in case of user missing it and always give you the number in the same format.
+- have ready to use inside validator with [jb-validation](https://github.com/javadbat/jb-validation)
 
 Demo in codepen: [jb-mobile-input](https://codepen.io/javadbat/pen/eYwZQjV)
 
@@ -24,7 +29,7 @@ or by using cdn
 ```html
 <jb-mobile-input></jb-mobile-input>
 ```
-to learn more information about this component and how to customize it like events, styling,... just read [jb-input](https://github.com/javadbat/jb-input)
+to learn more information about this component and how to customize it like events, validation, styling,... just read [jb-input](https://github.com/javadbat/jb-input).
 
 ## styling
 all styles come from [jb-input](https://github.com/javadbat/jb-input) except `--jb-mobile-input-input-direction` this may be set if you want your input to be rtl (not recommended).

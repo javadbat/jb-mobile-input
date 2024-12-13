@@ -1,1 +1,1 @@
-export {JBMobileInputWebComponent} from './dist/jb-mobile-input.js';
+export * from './dist/jb-mobile-input.js';

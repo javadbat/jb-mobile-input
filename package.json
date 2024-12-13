@@ -20,7 +20,7 @@
     "phone web-component",
     "cellphone web component"
   ],
-  "version": "2.1.0",
+  "version": "2.1.1",
   "bugs": "https://github.com/javadbat/jb-mobile-input/issues",
   "license": "MIT",
   "files": [
@@ -28,7 +28,8 @@
     "README.md",
     "lib/",
     "dist/",
-    "react/"
+    "react/",
+    "react/dist/"
   ],
   "main": "index.js",
   "module": "index.js",
@@ -39,7 +40,7 @@
   },
   "types": "./dist/web-component/jb-mobile-input/lib/jb-mobile-input.d.ts",
   "dependencies": {
-    "jb-input": ">=3.4.2",
+    "jb-input": ">=3.4.5",
     "jb-validation":">=0.2.0"
   }
 }

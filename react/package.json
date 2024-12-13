@@ -34,6 +34,6 @@
   },
   "dependencies": {
     "jb-mobile-input": "file:../index.js",
-    "jb-input": ">=3.2.0"
+    "jb-input": ">=3.4.5"
   }
 }
