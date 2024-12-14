@@ -1,6 +1,6 @@
 import React,{ useRef, useEffect, useImperativeHandle, useState, forwardRef, DetailedHTMLProps, HTMLAttributes } from 'react';
 import 'jb-mobile-input';
-import {type Props as JBInputProps, useJBInputAttribute, useJBInputEvents} from 'jb-input/react';
+import {BaseProps, type Props as JBInputProps, useJBInputAttribute, useJBInputEvents} from 'jb-input/react';
 // eslint-disable-next-line no-duplicate-imports
 import { type JBMobileInputWebComponent } from 'jb-mobile-input';
 interface JBMobileInputType extends DetailedHTMLProps<HTMLAttributes<JBMobileInputWebComponent>, JBMobileInputWebComponent> {
@@ -29,14 +29,14 @@ export const JBMobileInput = forwardRef((props:JBMobileInputProps, ref) => {
     refChangeCountSetter(refChangeCount + 1);
   }, [element.current]);
   useJBInputAttribute(element,props);
-  useJBInputEvents(element,props);
+  useJBInputEvents<JBMobileInputWebComponent>(element,props);
   return(
     <jb-mobile-input ref={element} class={props.className}>
       {props.children}
     </jb-mobile-input>
   );
 });
-export type JBMobileInputProps = JBInputProps & {
+export type JBMobileInputProps = BaseProps<JBMobileInputWebComponent> & {
   // add special props here
 }
 JBMobileInput.displayName = "JBMobileInput";
