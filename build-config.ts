@@ -23,5 +23,7 @@ export const reactComponentList: ReactComponentBuildConfig[] = [
       react: "React",
       "jb-input": "JBInput"
     },
+    umdName:"JBMobileInputReact",
+    dir:"./react"
   },
 ];
