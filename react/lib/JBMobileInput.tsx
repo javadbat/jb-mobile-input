@@ -16,7 +16,7 @@ declare global {
     }
 }
 // eslint-disable-next-line react/display-name
-export const JBMobileInput = forwardRef((props:JBMobileInputProps, ref) => {
+export const JBMobileInput = forwardRef((props:Props, ref) => {
   const element = useRef<JBMobileInputWebComponent>(null);
   const [refChangeCount, refChangeCountSetter] = useState(0);
   useImperativeHandle(
@@ -36,7 +36,7 @@ export const JBMobileInput = forwardRef((props:JBMobileInputProps, ref) => {
     </jb-mobile-input>
   );
 });
-export type JBMobileInputProps = BaseProps<JBMobileInputWebComponent> & {
+export type Props = BaseProps<JBMobileInputWebComponent> & {
   // add special props here
 }
 JBMobileInput.displayName = "JBMobileInput";
