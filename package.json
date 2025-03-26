@@ -20,7 +20,7 @@
     "phone web-component",
     "cellphone web component"
   ],
-  "version": "2.1.2",
+  "version": "2.2.0",
   "bugs": "https://github.com/javadbat/jb-mobile-input/issues",
   "license": "MIT",
   "files": [
@@ -40,7 +40,7 @@
   },
   "types": "./dist/jb-mobile-input.d.ts",
   "dependencies": {
-    "jb-input": ">=3.4.8",
+    "jb-input": ">=3.8.0",
     "jb-validation":">=0.2.0"
   }
 }

@@ -21,7 +21,7 @@ export class JBMobileInputWebComponent extends JBInputWebComponent implements Wi
   #getMobileInputValidations(){
     const list:ValidationItem<ValidationValue>[] = [];
     //check validation for mobile number itself
-    const regex = /^09[0-9]{2} [0-9]{7}$/g;
+    const regex = /^(?:09[0-9]{2} [0-9]{7})?$/g;
     const mobileValidation = {
       validator: regex,
       message: "شماره موبایل معتبر نیست",
