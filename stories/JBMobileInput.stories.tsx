@@ -2,7 +2,7 @@ import { JBMobileInput, Props } from 'jb-mobile-input/react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<Props> = {
-  title: "Example/form elements/Inputs/JBMobileInput",
+  title: "Components/form elements/Inputs/JBMobileInput",
   component: JBMobileInput,
   argTypes:{
     error:{
