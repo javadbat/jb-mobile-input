@@ -13,8 +13,9 @@ Demo in codepen: [jb-mobile-input](https://codepen.io/javadbat/pen/eYwZQjV)
 to use this component in **react** see [`jb-mobile-input/react`](https://github.com/javadbat/jb-mobile-input/tree/main/react);
 
 ## Installation
-```bash
-npm install --save jb-mobile-input
+
+```sh
+npm install jb-mobile-input
 ```
 
 ## Usage
@@ -23,12 +24,15 @@ npm install --save jb-mobile-input
 import 'jb-mobile-input';
 ```
 or by using cdn
+
 ```html
 <script src="https://unpkg.com/jb-mobile-input/dist/jb-mobile-input.umd.js"></script>
 ```
+
 ```html
 <jb-mobile-input></jb-mobile-input>
 ```
+
 to learn more information about this component and how to customize it like events, validation, styling,... just read [jb-input](https://github.com/javadbat/jb-input).
 
 ## styling
