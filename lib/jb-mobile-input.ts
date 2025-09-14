@@ -1,4 +1,4 @@
-import CSS from "./jb-mobile-input.scss";
+import CSS from "./jb-mobile-input.css";
 import "jb-input";
 // eslint-disable-next-line no-duplicate-imports
 import { JBInputWebComponent, JBInputValue, ValidationValue} from "jb-input";
