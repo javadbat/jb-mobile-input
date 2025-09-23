@@ -3,7 +3,10 @@ import "jb-input";
 // eslint-disable-next-line no-duplicate-imports
 import { JBInputWebComponent, JBInputValue, ValidationValue} from "jb-input";
 import { type WithValidation, type ValidationItem } from "jb-validation";
+import { i18n } from "jb-core/i18n";
+import { dictionary } from "./i18n";
 
+export {dictionary};
 export class JBMobileInputWebComponent extends JBInputWebComponent implements WithValidation<ValidationValue> {
   constructor() {
     super();
@@ -21,10 +24,11 @@ export class JBMobileInputWebComponent extends JBInputWebComponent implements Wi
   #getMobileInputValidations(){
     const list:ValidationItem<ValidationValue>[] = [];
     //check validation for mobile number itself
+    const message = dictionary.get(i18n,"validNumberMessage");
     const regex = /^(?:09[0-9]{2} [0-9]{7})?$/g;
     const mobileValidation = {
       validator: regex,
-      message: "شماره موبایل معتبر نیست",
+      message,
     };
     list.push(mobileValidation);
     return list;

@@ -6,10 +6,12 @@ export const webComponentList: WebComponentBuildConfig[] = [
     path: "./lib/jb-mobile-input.ts",
     outputPath: "./dist/jb-mobile-input.js",
     umdName: "JBMobileInput",
-    external: ["jb-input", "jb-validation"],
+    external: ["jb-input", "jb-validation", "jb-core", "jb-core/i18n"],
     globals: {
       "jb-input": "JBInput",
-      "jb-validation": "JBValidation"
+      "jb-validation": "JBValidation",
+      "jb-core":"JBCore",
+      "jb-core/i18n":"JBCoreI18N"
     },
   },
 ];

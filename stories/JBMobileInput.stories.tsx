@@ -28,3 +28,9 @@ export const Required: Story = {
     required: true,
   }
 };
+export const RequiredWithMessage: Story = {
+  args: {
+    label: 'mobile',
+    required: 'please enter the full number',
+  }
+};
