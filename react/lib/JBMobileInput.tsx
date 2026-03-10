@@ -1,9 +1,9 @@
 'use client';
-import React,{ useRef, useEffect, useImperativeHandle, useState, forwardRef, DetailedHTMLProps, HTMLAttributes } from 'react';
+
+import React,{ useRef, useImperativeHandle, forwardRef, type DetailedHTMLProps, type HTMLAttributes } from 'react';
 import 'jb-mobile-input';
-import {BaseProps, type Props as JBInputProps, useJBInputAttribute, useJBInputEvents} from 'jb-input/react';
-// eslint-disable-next-line no-duplicate-imports
-import { type JBMobileInputWebComponent } from 'jb-mobile-input';
+import {type BaseProps, useJBInputAttribute, useJBInputEvents} from 'jb-input/react';
+import type { JBMobileInputWebComponent } from 'jb-mobile-input';
 interface JBMobileInputType extends DetailedHTMLProps<HTMLAttributes<JBMobileInputWebComponent>, JBMobileInputWebComponent> {
   class?:string,
 }
@@ -26,11 +26,12 @@ export const JBMobileInput = forwardRef((props:Props, ref) => {
     () => (element ? element.current : undefined),
     [element],
   );
-  useJBInputAttribute(element,props);
-  useJBInputEvents<JBMobileInputWebComponent>(element,props);
+  const {disabled,required,validationList,value,onBeforeinput,onBlur,onChange,onEnter,onFocus,onInput,onKeydown,onKeyup,...otherProps} = props;
+  useJBInputAttribute(element,{disabled,required,validationList,value,...otherProps});
+  useJBInputEvents<JBMobileInputWebComponent>(element,{onBeforeinput,onBlur,onChange,onEnter,onFocus,onInput,onKeydown,onKeyup,...otherProps});
 
   return(
-    <jb-mobile-input ref={element} class={props.className}>
+    <jb-mobile-input ref={element} {...otherProps}>
       {props.children}
     </jb-mobile-input>
   );
