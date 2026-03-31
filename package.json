@@ -42,6 +42,6 @@
   "dependencies": {
     "jb-input": ">=3.11.3",
     "jb-validation":">=0.4.0",
-    "jb-core":">=0.18.0"
+    "jb-core":">=0.25.0"
   }
 }
