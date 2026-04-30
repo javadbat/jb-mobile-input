@@ -17,7 +17,7 @@ export class JBMobileInputWebComponent extends JBInputWebComponent implements Wi
     const html = `<style>${CSS}</style>`;
     const element = document.createElement("template");
     element.innerHTML = html;
-    this.shadowRoot.appendChild(element.content.cloneNode(true));
+    this.shadowRoot!.appendChild(element.content.cloneNode(true));
     this.validation.addValidationListGetter(this.#getMobileInputValidations.bind(this));
     this.addStandardValueCallback(this.#standardMobileValue.bind(this));
   }
