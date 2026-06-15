@@ -6,25 +6,22 @@
 ![GitHub Created At](https://img.shields.io/github/created-at/javadbat/jb-mobile-input)
 
 superset component on [jb-input](https://github.com/javadbat/jb-input) , just for mobile number input with extra filter and ready to use validator.
-- dont accept non-number char
+- don't accept non-number char
 - accept persian number char
 - type heading `09` in case of user missing it and always give you the number in the same format.
 - have ready to use inside validator with [jb-validation](https://github.com/javadbat/jb-validation)
 
 Demo in codepen: [jb-mobile-input](https://codepen.io/javadbat/pen/eYwZQjV)
 
-## using with JS frameworks
-
+## Using With JS Frameworks
 - [<img src="https://img.shields.io/badge/React.js-jb--mobile--input%2Freact-000.svg?logo=react&logoColor=%2361DAFB" height="30" />](https://github.com/javadbat/jb-mobile-input/tree/main/react)
 
 ## Installation
-
 ```sh
 npm install jb-mobile-input
 ```
 
 ## Usage
-
 ```js
 import 'jb-mobile-input';
 ```
@@ -40,11 +37,15 @@ or by using cdn
 
 to learn more information about this component and how to customize it like events, validation, styling,... just read [jb-input](https://github.com/javadbat/jb-input).
 
-## styling
+## Styling
 all styles come from [jb-input](https://github.com/javadbat/jb-input) except `--jb-mobile-input-input-direction` this may be set if you want your input to be rtl (not recommended).
 
-## Other Related Docs:
+## CSS Variables
+| CSS variable name | description |
+| --- | --- |
+| --jb-mobile-input-input-direction | Customize input direction. |
 
+## Related Docs
 - see [`jb-mobile-input/react`](https://github.com/javadbat/jb-mobile-input/tree/main/react) if you want to use this component as a ReactJS component.
 
 - see [All JB Design system Component List](https://javadbat.github.io/design-system/) for more components
