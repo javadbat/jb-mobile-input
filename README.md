@@ -1,5 +1,10 @@
 # jb-mobile-input web component
 
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/jb-mobile-input)
+[![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://raw.githubusercontent.com/javadbat/jb-mobile-input/main/LICENSE)
+[![NPM Version](https://img.shields.io/npm/v/jb-mobile-input)](https://www.npmjs.com/package/jb-mobile-input)
+![GitHub Created At](https://img.shields.io/github/created-at/javadbat/jb-mobile-input)
+
 superset component on [jb-input](https://github.com/javadbat/jb-input) , just for mobile number input with extra filter and ready to use validator.
 - dont accept non-number char
 - accept persian number char
