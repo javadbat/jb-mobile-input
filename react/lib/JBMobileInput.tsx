@@ -23,11 +23,11 @@ export const JBMobileInput = forwardRef((props:Props, ref) => {
   const element = useRef<JBMobileInputWebComponent>(null);
   useImperativeHandle(
     ref,
-    () => (element ? element.current : undefined),
+    () => element.current ?? undefined,
     [element],
   );
   const {disabled,required,validationList,value,onBeforeinput,onBlur,onChange,onEnter,onFocus,onInput,onKeydown,onKeyup,...otherProps} = props;
-  useJBInputAttribute(element,{disabled,required,validationList,value,...otherProps});
+  useJBInputAttribute<JBMobileInputWebComponent>(element,{disabled,required,validationList,value,...otherProps});
   useJBInputEvents<JBMobileInputWebComponent>(element,{onBeforeinput,onBlur,onChange,onEnter,onFocus,onInput,onKeydown,onKeyup,...otherProps});
 
   return(
