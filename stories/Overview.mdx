@@ -1,0 +1,18 @@
+import {Meta, Title, Story, Controls, Stories, Source} from '@storybook/blocks';
+import * as MobileInputStories from './JBMobileInput.stories';
+
+<Meta of={MobileInputStories}/>
+
+<Title>JB Mobile Input</Title>
+
+Mobile number input component with helper message and required validation.
+
+<Story of={MobileInputStories.Normal}/>
+<Controls of={MobileInputStories.Normal}/>
+<Source of={MobileInputStories.Normal}/>
+
+## Required validation
+<Story of={MobileInputStories.RequiredWithMessage}/>
+
+## Other samples & variants
+<Stories/>
