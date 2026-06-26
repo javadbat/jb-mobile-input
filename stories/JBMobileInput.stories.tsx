@@ -1,7 +1,7 @@
-import { JBMobileInput, Props } from 'jb-mobile-input/react';
+import { JBMobileInput } from 'jb-mobile-input/react';
 import type { Meta, StoryObj } from '@storybook/react';
 
-const meta: Meta<Props> = {
+const meta = {
   title: "Components/form elements/Inputs/JBMobileInput",
   component: JBMobileInput,
   argTypes:{
@@ -12,9 +12,9 @@ const meta: Meta<Props> = {
       description:"error message"
     }
   }
-};
+} satisfies Meta<typeof JBMobileInput>;
 export default meta;
-type Story = StoryObj<typeof JBMobileInput>;
+type Story = StoryObj<typeof meta>;
 
 export const Normal: Story = {
   args: {
