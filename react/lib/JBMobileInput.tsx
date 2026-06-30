@@ -1,21 +1,10 @@
 'use client';
 
-import React,{ useRef, useImperativeHandle, forwardRef, type DetailedHTMLProps, type HTMLAttributes } from 'react';
+import React,{ useRef, useImperativeHandle, forwardRef } from 'react';
 import 'jb-mobile-input';
 import {type BaseProps, useJBInputAttribute, useJBInputEvents} from 'jb-input/react';
 import type { JBMobileInputWebComponent } from 'jb-mobile-input';
-interface JBMobileInputType extends DetailedHTMLProps<HTMLAttributes<JBMobileInputWebComponent>, JBMobileInputWebComponent> {
-  class?:string,
-}
-declare module "react" {
-    // eslint-disable-next-line @typescript-eslint/no-namespace
-    namespace JSX {
-      interface IntrinsicElements {
-        'jb-mobile-input': JBMobileInputType;
-      }
-      
-    }
-}
+import './module-declaration.js';
 
 // eslint-disable-next-line react/display-name
 export const JBMobileInput = forwardRef((props:Props, ref) => {
