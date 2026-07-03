@@ -118,6 +118,14 @@ The React component uses inherited `jb-input` CSS variables/parts plus:
 <JBMobileInput className="mobile-input" />
 ```
 
+## Slots
+
+`JBMobileInput` inherits `jb-input` slot behavior. Pass children with `slot="start-section"` or `slot="end-section"` for prefix and suffix content.
+
+## CSS parts and custom style
+
+Use inherited `jb-input` CSS parts and variables plus `--jb-mobile-input-input-direction` for mobile-number text direction.
+
 ## Shared Documentation
 
 For web-component behavior, value normalization, validation, slots, CSS parts, and the full API, see [`jb-mobile-input`](https://github.com/javadbat/jb-mobile-input).
