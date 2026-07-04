@@ -3,8 +3,9 @@ import type { ReactComponentBuildConfig, WebComponentBuildConfig } from "../../t
 export const webComponentList: WebComponentBuildConfig[] = [
   {
     name: "jb-mobile-input",
-    path: "./lib/jb-mobile-input.ts",
-    outputPath: "./dist/jb-mobile-input.js",
+    path: "./web-component/lib/jb-mobile-input.ts",
+    outputPath: "./web-component/dist/jb-mobile-input.js",
+    tsConfigPath: "./web-component/tsconfig.json",
     umdName: "JBMobileInput",
     external: ["jb-input", "jb-validation", "jb-core", "jb-core/i18n"],
     globals: {

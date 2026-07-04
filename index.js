@@ -1,1 +1,1 @@
-export * from './dist/jb-mobile-input.js';
+export * from './web-component/dist/jb-mobile-input.js';
