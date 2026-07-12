@@ -1,5 +1,5 @@
 import { JBMobileInput } from 'jb-mobile-input/react';
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { expect, userEvent, waitFor } from 'storybook/test';
 import { getMessageText, getMobileInput, getNativeInput } from './test-utils';
 

@@ -21,10 +21,11 @@ export const reactComponentList: ReactComponentBuildConfig[] = [
     name: "jb-mobile-input-react",
     path: "./react/lib/JBMobileInput.tsx",
     outputPath: "./react/dist/JBMobileInput.js",
-    external: ["jb-input", "jb-mobile-input", "prop-types", "react"],
+    external: ["jb-input", "jb-input/react", "jb-mobile-input", "prop-types", "react"],
     globals: {
       react: "React",
       "jb-input": "JBInput",
+      "jb-input/react": "JBInputReact",
       "jb-mobile-input": "JBMobileInput",
     },
     umdName:"JBMobileInputReact",
