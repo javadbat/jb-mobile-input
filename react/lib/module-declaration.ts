@@ -3,6 +3,8 @@ import type { JBMobileInputWebComponent } from 'jb-mobile-input';
 
 interface JBMobileInputType extends DetailedHTMLProps<HTMLAttributes<JBMobileInputWebComponent>, JBMobileInputWebComponent> {
   class?:string,
+  value?: string,
+  initialValue?: string,
 }
 
 declare module "react" {
