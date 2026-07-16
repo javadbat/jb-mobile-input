@@ -41,6 +41,17 @@
     "url": "https://github.com/javadbat/jb-mobile-input"
   },
   "types": "./web-component/dist/jb-mobile-input.d.ts",
+  "exports": {
+    ".": {
+      "types": "./web-component/dist/jb-mobile-input.d.ts",
+      "default": "./index.js"
+    },
+    "./react": {
+      "types": "./react/dist/JBMobileInput.d.ts",
+      "default": "./react/index.js"
+    },
+    "./*": "./*"
+  },
   "dependencies": {
     "jb-input": ">=3.11.3",
     "jb-validation":">=0.4.0",
