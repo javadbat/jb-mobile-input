@@ -18,9 +18,10 @@ export const JBMobileInput = forwardRef((props:Props, ref) => {
   const {disabled,initialValue,required,validationList,value,onBeforeinput,onBlur,onChange,onEnter,onFocus,onInput,onKeydown,onKeyup,...otherProps} = props;
   useJBInputAttribute<JBMobileInputWebComponent>(element,{disabled,required,validationList,...otherProps});
   useJBInputEvents<JBMobileInputWebComponent>(element,{onBeforeinput,onBlur,onChange,onEnter,onFocus,onInput,onKeydown,onKeyup,...otherProps});
+  const valueProps = value === undefined ? {} : { value: value?.toString() ?? "" };
 
   return(
-    <jb-mobile-input ref={element} value={value?.toString() ?? ""} initialValue={initialValue?.toString() ?? ""} {...otherProps}>
+    <jb-mobile-input ref={element} initialValue={initialValue?.toString() ?? ""} {...valueProps} {...otherProps}>
       {props.children}
     </jb-mobile-input>
   );

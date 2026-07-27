@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+import { JBButton } from 'jb-button/react';
 import { JBMobileInput } from 'jb-mobile-input/react';
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { expect, userEvent, waitFor } from 'storybook/test';
@@ -60,6 +62,85 @@ export const Normal: Story = {
     });
   }
 };
+
+export const InitialValue: Story = {
+  render: (args) => {
+    const formRef = useRef<HTMLFormElement>(null);
+    return (
+      <form ref={formRef}>
+        <JBMobileInput {...args} />
+        <JBButton type="button" onClick={() => formRef.current?.reset()}>Reset</JBButton>
+      </form>
+    );
+  },
+  args: {
+    label: 'initial mobile',
+    initialValue: '0912 3456789',
+  },
+  play: async ({ canvasElement }) => {
+    const mobileInput = getMobileInput(canvasElement);
+    const resetButton = canvasElement.querySelector('jb-button')?.shadowRoot?.querySelector<HTMLButtonElement>('button');
+
+    expect(resetButton).toBeTruthy();
+
+    await waitFor(() => {
+      // The public baseline uses the same canonical digits as the live value.
+      expect(mobileInput.initialValue).toBe('09123456789');
+      expect(mobileInput.value).toBe('09123456789');
+      expect(mobileInput.displayValue).toBe('0912 3456789');
+      expect(mobileInput.isDirty).toBe(false);
+    });
+
+    mobileInput.initialValue = '۰۹۳۵۱۲۳۴۵۶۷';
+
+    await waitFor(() => {
+      expect(mobileInput.initialValue).toBe('09351234567');
+      expect(mobileInput.value).toBe('09351234567');
+      expect(mobileInput.isDirty).toBe(false);
+    });
+
+    mobileInput.value = '09111234567';
+    await userEvent.click(resetButton!);
+
+    await waitFor(() => {
+      expect(mobileInput.value).toBe('09351234567');
+      expect(mobileInput.isDirty).toBe(false);
+    });
+  },
+};
+
+export const InitialValueDoesNotOverrideValue: Story = {
+  args: {
+    initialValue: '0912 3456789',
+    value: '09351234567',
+  },
+  play: async ({ canvasElement }) => {
+    const mobileInput = getMobileInput(canvasElement);
+
+    await waitFor(() => {
+      expect(mobileInput.initialValue).toBe('09123456789');
+      expect(mobileInput.value).toBe('09351234567');
+      expect(mobileInput.isDirty).toBe(true);
+    });
+  },
+};
+
+export const ExplicitNullValueDoesNotFallBackToInitialValue: Story = {
+  args: {
+    initialValue: '0912 3456789',
+    value: null,
+  },
+  play: async ({ canvasElement }) => {
+    const mobileInput = getMobileInput(canvasElement);
+
+    await waitFor(() => {
+      expect(mobileInput.initialValue).toBe('09123456789');
+      expect(mobileInput.value).toBe('');
+      expect(mobileInput.isDirty).toBe(true);
+    });
+  },
+};
+
 export const Required: Story = {
   args: {
     label: 'required',
