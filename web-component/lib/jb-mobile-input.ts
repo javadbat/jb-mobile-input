@@ -1,3 +1,4 @@
+import { defineWebComponent } from "jb-core";
 import CSS from "./jb-mobile-input.css";
 import VariablesCSS from "./variables.css";
 import "jb-input";
@@ -104,7 +105,4 @@ export class JBMobileInputWebComponent extends JBInputWebComponent implements Wi
     return { value:unformattedValue, displayValue:formattedValue };
   }
 }
-const myElementNotExists = !customElements.get("jb-mobile-input");
-if (myElementNotExists) {
-  window.customElements.define("jb-mobile-input", JBMobileInputWebComponent);
-}
+defineWebComponent("jb-mobile-input", JBMobileInputWebComponent);
