@@ -106,3 +106,9 @@ export class JBMobileInputWebComponent extends JBInputWebComponent implements Wi
   }
 }
 defineWebComponent("jb-mobile-input", JBMobileInputWebComponent);
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "jb-mobile-input": JBMobileInputWebComponent;
+  }
+}
