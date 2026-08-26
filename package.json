@@ -38,7 +38,7 @@
   "homepage": "https://github.com/javadbat/jb-mobile-input",
   "repository": {
     "type": "git",
-    "url": "https://github.com/javadbat/jb-mobile-input"
+    "url": "https://github.com/javadbat/jb-mobile-input.git"
   },
   "types": "./web-component/dist/jb-mobile-input.d.ts",
   "exports": {

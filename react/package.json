@@ -30,7 +30,7 @@
   "types": "./dist/JBMobileInput.d.ts",
   "repository": {
 		"type": "git",
-		"url": "git@github.com:javadbat/jb-mobile-input-react.git"
+		"url": "https://github.com/javadbat/jb-mobile-input-react.git"
   },
   "dependencies": {
     "jb-mobile-input": "file:../index.js",
