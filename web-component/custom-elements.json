@@ -190,11 +190,11 @@
           ],
           "slots": [
             {
-              "name": "start-section",
+              "name": "inline-start",
               "description": "Inherited jb-input slot rendered before the native input."
             },
             {
-              "name": "end-section",
+              "name": "inline-end",
               "description": "Inherited jb-input slot rendered after the native input."
             }
           ],
@@ -204,7 +204,7 @@
               "description": "The label element inherited from jb-input."
             },
             {
-              "name": "input-box",
+              "name": "control",
               "description": "The wrapper around slots and inner input inherited from jb-input."
             },
             {

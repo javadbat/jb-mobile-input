@@ -132,8 +132,8 @@ Inherited from `jb-input`.
 
 | slot | description |
 | --- | --- |
-| `start-section` | Content rendered before the native input. |
-| `end-section` | Content rendered after the native input. |
+| `inline-start` | Content rendered before the native input. |
+| `inline-end` | Content rendered after the native input. |
 
 ## CSS parts and custom style
 
@@ -142,7 +142,7 @@ Inherited CSS parts from `jb-input`:
 | part | description |
 | --- | --- |
 | `label` | The label element. |
-| `input-box` | The wrapper around slots and inner input. |
+| `control` | The wrapper around slots and inner input. |
 | `input` | The inner native input. |
 | `message` | The helper or validation message element. |
 

@@ -54,12 +54,12 @@ Inherited from `jb-input/react`.
 | --- | --- |
 | `onInput` | Fired on each user edit after value standardization. |
 | `onChange` | Fired when the value is committed. |
-| `onBeforeinput` | Fired before the native input changes. |
+| `onBeforeInput` | Fired before the native input changes. |
 | `onFocus` | Fired when the input receives focus. |
 | `onBlur` | Fired when the input loses focus. |
 | `onEnter` | Fired when Enter is pressed. |
-| `onKeydown` | Fired on keydown. |
-| `onKeyup` | Fired on keyup. |
+| `onKeyDown` | Fired on keydown. |
+| `onKeyUp` | Fired on keyup. |
 
 ## Value format
 
@@ -120,7 +120,7 @@ The React component uses inherited `jb-input` CSS variables/parts plus:
 
 ## Slots
 
-`JBMobileInput` inherits `jb-input` slot behavior. Pass children with `slot="start-section"` or `slot="end-section"` for prefix and suffix content.
+`JBMobileInput` inherits `jb-input` slot behavior. Pass children with `slot="inline-start"` or `slot="inline-end"` for prefix and suffix content.
 
 ## CSS parts and custom style
 
