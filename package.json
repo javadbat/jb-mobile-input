@@ -53,8 +53,8 @@
     "./*": "./*"
   },
   "dependencies": {
-    "jb-input": "^3.19.0",
+    "jb-input": "^4.0.0",
     "jb-validation":"^1.0.0",
-    "jb-core":"^0.36.0"
+    "jb-core":"^0.37.0"
   }
 }
